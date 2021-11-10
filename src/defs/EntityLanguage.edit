@@ -10,9 +10,9 @@ Attribute {
 
 Entity {
     @projection [
-        Entity ${self.name} base ${self.baseEntity} {
-            ${self.attributes @vertical @separator [\n]}
-            ${self.methods @vertical @separator [\n]}
+        Entity ${self.name} [?base ${self.baseEntity}] {
+            ${self.attributes @vertical }
+            ${self.methods @vertical }
         }
     ]
     @trigger "entity"
@@ -27,7 +27,7 @@ EntityModelUnit {
                 @terminator [\n]
             }
         model wide Methods:
-            ${self.methods @vertical @separator [\n] }
+            ${self.methods  }
         }
         ]
 }
@@ -125,7 +125,7 @@ AttributeRef {
 }
 
 ParameterRef {
-    @projection [ ${self.parameter} . ${self.appliedfeature} ]
+    @projection [ ${self.parameter} [?. ${self.appliedfeature}] ]
 }
 
 
@@ -145,6 +145,7 @@ AbsExpression {
     @projection default [
         abs( ${self.expr} )
     ]
+    @trigger "abs"
 }
 /*
 */
