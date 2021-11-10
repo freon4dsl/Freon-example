@@ -1,17 +1,17 @@
 language Entity
 
 model EntityModel {
-    name: string;
+    name: identifier;
     models: EntityModelUnit[];
 }
 
-public modelunit EntityModelUnit {
-    public name: string;
+modelunit EntityModelUnit {
+    public name: identifier;
     public entities: Entity[];
     public methods: Method[];
 }
 interface BaseType {
-    public name: string;
+    public name: identifier;
 }
 interface Type base BaseType {
 }
@@ -23,7 +23,7 @@ public concept Entity implements Type {
 }
 
 public concept Method {
-    public name: string;
+    public name: identifier;
     reference declaredType : Type;
     body: ExExpression;
     parameters: Parameter[];
@@ -35,7 +35,7 @@ concept Attribute {
 }
 
 limited AttributeType implements Type {
-    name: string;
+    name: identifier;
     extra: number;
     String = { name: "String", "extra": "199"}
     Integer = { "name": "Integer", "extra": "240261"}
@@ -44,7 +44,7 @@ limited AttributeType implements Type {
 }
 
 concept Parameter  {
-    name: string;
+    name: identifier;
     reference declaredType: Type;
 }
 
