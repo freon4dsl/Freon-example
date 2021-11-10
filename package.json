@@ -10,13 +10,12 @@
     "url": "https://github.com/joswarmer/ProjectIt.git"
   },
   "scripts": {
-    "build": "yarn example && tsc",
+    "build": "generate && tsc",
     "build-app": "rollup -c",
     "dev": "rollup -c -w",
     "start": "sirv public",
     "validate": "svelte-check",
     "errors-only": "svelte-check --threshold error",
-
     "generate": "projectit all -d src/defs -o src/picode"
   },
   "devDependencies": {
@@ -25,6 +24,7 @@
     "@rollup/plugin-node-resolve": "^11.0.0",
     "@rollup/plugin-typescript": "8.2.5",
     "@tsconfig/svelte": "^1.0.0",
+    "prettier": "2.0.4",
     "rollup": "^2.3.4",
     "rollup-plugin-css-only": "^3.1.0",
     "rollup-plugin-livereload": "^2.0.0",
