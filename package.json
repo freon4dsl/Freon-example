@@ -10,7 +10,7 @@
     "url": "https://github.com/joswarmer/ProjectIt.git"
   },
   "scripts": {
-    "build": "generate && tsc",
+    "build": "yarn generate && tsc",
     "build-app": "rollup -c",
     "dev": "rollup -c -w",
     "start": "sirv public",
