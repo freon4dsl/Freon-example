@@ -31,7 +31,7 @@ public concept Method {
 
 concept Attribute {
     reference declaredType: Type;
-    name: string;
+    name: identifier;
 }
 
 limited AttributeType implements Type {
