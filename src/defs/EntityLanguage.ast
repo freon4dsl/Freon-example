@@ -87,7 +87,7 @@ expression ParameterRef base ExExpression {
 }
 
 concept LoopVariable {
-    name: string;
+    name: identifier;
 }
 
 expression LoopVariableRef base ExExpression {
