@@ -17,7 +17,7 @@ The simple steps to get the exmple running are:
     yarn generate
     ```
 
-*   Start the server (note that anything that is saved in the editor will be stored in ~/modelstore):
+*   Start the server, preferrably in another terminal (note that anything that is saved in the editor will be stored in ~/modelstore):
     ```bash
     yarn model-server
     ```
