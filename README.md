@@ -3,7 +3,7 @@ An example project showing how to build a projectional editor with ProjectIt.
 
 This example works with version 0.2.0 of ProjectIt.
 
-You should also read the documentation at https://www.projectit.org.
+You should also read the documentation at https://www.projectit.org/020_Getting_Started/010_Installation.
 
 For an explanation of the content of the project see
 <a href="https://www.projectit.org//020_Getting_Started/020_Project_Structure" target="_blank">
@@ -16,6 +16,7 @@ In the following the root of the project will be indicated with '~'.
 *   Clone or copy branch `master`.
 
 *   Next, install all necessary packages by running:
+
     ```bash
     yarn install
     ```
@@ -25,12 +26,15 @@ In the following the root of the project will be indicated with '~'.
     yarn generate
     ```
 
+
 *   Start the server (note that anything that is saved in the editor will be stored in `~/modelstore`):
+
     ```bash
     yarn model-server
     ```
 
 *	Open another (bash) terminal, and start the generated editor from it:
+
      ```bash
      yarn dev
      ```
