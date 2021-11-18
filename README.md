@@ -39,8 +39,3 @@ In the following the root of the project will be indicated with '~'.
 >    `Entity` on `<a href="http://localhost:3000/" target="_blank">http://localhost:3000/</a>`.
 >    If Chrome is not your preferred browser, please open the above page in Chrome, because we
 >    cannot ensure that the editor functions as it should in other browsers.
-
-*   Try out the editor
-
-> If you are having trouble using the editor, have a look at the key-bindings under the *Help* menu.
-
