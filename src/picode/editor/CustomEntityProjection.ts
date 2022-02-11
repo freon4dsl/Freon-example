@@ -3,14 +3,8 @@ import {
     PiProjection,
     PiElement,
     Box,
-    createDefaultExpressionBox,
-    TextBox,
-    KeyPressAction,
-    styleToCSS,
     PiTableDefinition
 } from "@projectit/core";
-import { NumberLiteralExpression } from "../language/gen/NumberLiteralExpression";
-import { numeric } from "./styles/styles";
 
 /**
  * Class CustomEntityProjection provides an entry point for the language engineer to
