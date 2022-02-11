@@ -5,13 +5,16 @@ Attribute {
     @projection attribuut [
         ${self.name} : ${self.declaredType}
     ]
+    @table [
+        Name | Type | Is Persisted
+        ${self.name} | ${self.declaredType} | ${self.persisted}
+    ]
 }
-
 
 Entity {
     @projection [
         Entity ${self.name} [?base ${self.baseEntity}] {
-            ${self.attributes @vertical }
+            ${self.attributes @table }
             ${self.methods @vertical }
         }
     ]

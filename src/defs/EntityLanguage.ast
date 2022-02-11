@@ -32,6 +32,7 @@ public concept Method {
 concept Attribute {
     reference declaredType: Type;
     name: identifier;
+    persisted: boolean;
 }
 
 limited AttributeType implements Type {
