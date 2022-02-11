@@ -63,11 +63,11 @@ expression StringLiteralExpression base LiteralExpression {
 }
 
 expression NumberLiteralExpression base LiteralExpression   {
-    value: string; // TODO should be changed to type number
+    value: number; // TODO should be changed to type number
 }
 
 expression BooleanLiteralExpression base LiteralExpression {
-    value: string; // TODO should be changed to type boolean
+    value: boolean; // TODO should be changed to type boolean
 }
 
 expression AbsExpression base ExExpression {

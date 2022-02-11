@@ -29,13 +29,13 @@
 	};
 
 	const handleCancel = () => {
-		console.log("Cancel called ");
+		// console.log("Cancel called ");
 		$toBeDeleted = null;
 		$deleteUnitDialogVisible = false;
 	}
 
 	const handleSubmit = () => {
-		console.log("Submit called, unit to be deleted: " + $toBeDeleted.name + "." + $currentModelName);
+		// console.log("Submit called, unit to be deleted: " + $toBeDeleted.name + "." + $currentModelName);
 		EditorCommunication.getInstance().deleteModelUnit($toBeDeleted);
 		$deleteUnitDialogVisible = false;
 	}

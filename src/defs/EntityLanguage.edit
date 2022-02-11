@@ -27,7 +27,7 @@ EntityModelUnit {
                 @terminator [\n]
             }
         model wide Methods:
-            ${self.methods  }
+            ${self.methods @vertical }
         }
         ]
 }
