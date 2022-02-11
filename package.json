@@ -7,7 +7,7 @@
   "types": "dist/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/joswarmer/ProjectIt.git"
+    "url": "https://github.com/projectit-org/ProjectIt-example"
   },
   "scripts": {
     "build": "yarn generate && tsc",
