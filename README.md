@@ -36,6 +36,7 @@ In the following the root of the project will be indicated with '~'.
 * Open another (bash) terminal, and start the generated editor from it:
 
      ```bash
+     yarn prepare-app   # Needed generate the runtime css files.
      yarn dev
      ```
      
@@ -47,3 +48,4 @@ on [localhost:5000](http://localhost:5000/).
 Under the `View` menu you can deselect the `myTables` option to get a view as text without tables.
 
 Styling is done though a collection of css variables in `style/_freon_theme-light.scss`.
+If you change the theme, run `yarn prepare-app` to uopdate the running app with the new style.
