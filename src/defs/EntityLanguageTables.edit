@@ -1,0 +1,37 @@
+editor myTables
+
+// Entity project defined the 'attributes' to be shown as a table
+Entity {
+    [
+        entity ${name} [? base ${baseEntity}] {
+            ${attributes table rows }
+            ${methods  }
+        }
+    ]
+}
+
+// This defines how an attribute table looks
+Attribute {
+    table [
+        Name    | Type
+        ${name} | ${declaredType}
+    ]
+}
+
+// Method specifies that 'parameters' must be shown as a table
+Method {
+    [
+        method ${name} ( ${parameters table} ): ${declaredType} {
+            ${body}
+        }
+    ]
+}
+
+// This specifies the table projection for parameters
+Parameter {
+    table [
+        Type            | Name
+        ${declaredType} | ${name}
+    ]
+}
+

@@ -1,139 +1,127 @@
-editor User for language Entity
+editor default
 
+boolean [RIGHT | WRONG] // are the strings used to display a boolean value
 
 Attribute {
-    @projection attribuut [
-        ${self.name} : ${self.declaredType}
-    ]
-    @table [
-        Name | Type | Is Persisted
-        ${self.name} | ${self.declaredType} | ${self.persisted}
-    ]
+    [ ${self.name} : ${self.declaredType} ]
+
 }
 
 Entity {
-    @projection [
-        Entity ${self.name} [?base ${self.baseEntity}] {
-            ${self.attributes @table }
-            ${self.methods @vertical }
+    [
+        Entity ${name} [?base ${baseEntity}] {
+            ${self.attributes }
+            ${self.methods vertical }
         }
     ]
-    @trigger "entity"
+    trigger = "entity"
 }
 
 EntityModelUnit {
-    @projection
         [
-        model part ${self.name} {
-            ${self.entities
-                @vertical
-                @terminator [\n]
-            }
-        model wide Methods:
-            ${self.methods @vertical }
+        Unit ${name} {
+            ${entities vertical }
+
+        Unit level methods:
+            ${methods vertical }
         }
         ]
 }
 
 Method {
-    @projection [
-        method ${self.name} ( ${self.parameters @separator[,] } ): ${self.declaredType} {
-            ${self.body}
+    [
+        method ${name} ( ${parameters separator[,] } ): ${declaredType} {
+            ${body}
         }
     ]
 }
 
 Parameter {
-    @projection attribuut [
-        ${self.name} : ${self.declaredType}
-    ]
+    [ ${name} : ${declaredType} ]
 }
 
 MethodCallExpression {
-    @projection MethodCallExpression
-        [
-        CALL ${self.methodDefinition} ( ${self.args @separator[,] } )
-        ]
-    @trigger "method"
+    [
+    CALL ${self.methodDefinition} ( ${self.args separator[,] } )
+    ]
+    referenceShortcut = ${methodDefinition}
+    trigger = "method"
 }
 
 SumExpression {
-    @projection [
+    [
         sum from ${self.variable} = ${self.from} to ${self.to} of ${self.body}
     ]
-    @trigger "sum"
+    trigger = "sum"
 }
 
 LoopVariableRef {
-    @projection [ ${self.variable} ]
+    [ ${self.variable} ]
 }
 
 LoopVariable {
-    @projection [ ${self.name} ]
-    @trigger    "var"
+    [ ${self.name} ]
+    trigger = "var"
 }
 
 
 NumberLiteralExpression {
-    @projection normal
         [${self.value}]
 }
 
 StringLiteralExpression {
-    @projection StringLiteralExpression
         [
         '${self.value}'
         ]
-    @trigger "'"
+    trigger = "'"
 }
 
 PlusExpression {
-    @symbol "+"
+    symbol = "+"
 }
 
 MultiplyExpression {
-    @symbol "*"
+    symbol = "*"
 }
 
 DivideExpression {
-    @symbol "/"
+    symbol = "/"
 }
 
 LessThenExpression {
-    @symbol "<"
+    symbol = "<"
 }
 
 OrExpression {
-    @symbol "or"
+    symbol = "or"
 }
 AndExpression {
-    @symbol "and"
+    symbol = "and"
 }
 GreaterThenExpression {
-    @symbol ">"
+    symbol = ">"
 }
 EqualsExpression {
-    @symbol "=="
+    symbol = "=="
 }
 
 BooleanLiteralExpression {
-    @projection [ ${self.value} ]
-    @trigger "boolean"
+    [ ${self.value} ]
+    trigger = "boolean"
 }
 
 
 AttributeRef {
-    @projection [ ${self.attribute} ]
-    @trigger "attribute"
+    [ ${self.attribute} ]
+    trigger = "attribute"
 }
 
 ParameterRef {
-    @projection [ ${self.parameter} [?. ${self.appliedfeature}] ]
+    [ ${self.parameter} [?. ${self.appliedfeature}] ]
 }
 
 
 IfExpression {
-    @projection IfExpression
         [
         if (${self.condition}) then
             ${self.whenTrue}
@@ -141,18 +129,13 @@ IfExpression {
             ${self.whenFalse}
         endif
         ]
-    @trigger "if"
+    trigger = "if"
 }
 
 AbsExpression {
-    @projection default [
-        abs( ${self.expr} )
-    ]
-    @trigger "abs"
+    [ abs( ${self.expr} ) ]
+    trigger = "abs"
 }
-/*
-*/
-/*
 
 //IfExpression {
 //    @projection IfExpression
@@ -161,9 +144,3 @@ AbsExpression {
 //        ]
 //    @trigger "if"
 //}
-/*
-
-/*
-*/
-/*
-*/

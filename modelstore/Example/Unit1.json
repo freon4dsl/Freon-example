@@ -1,0 +1,49 @@
+{
+   "$typename": "EntityModelUnit",
+   "name": "Unit1",
+   "entities": [
+      {
+         "$typename": "Entity",
+         "name": "Person",
+         "attributes": [
+            {
+               "$typename": "Attribute",
+               "name": "lenght",
+               "persisted": false,
+               "declaredType": "Integer"
+            },
+            {
+               "$typename": "Attribute",
+               "name": "name",
+               "persisted": false,
+               "declaredType": "String"
+            }
+         ],
+         "methods": [
+            {
+               "$typename": "Method",
+               "name": "givePresent",
+               "body": null,
+               "parameters": [],
+               "declaredType": null
+            }
+         ],
+         "baseEntity": null
+      },
+      {
+         "$typename": "Entity",
+         "name": "Thing",
+         "attributes": [
+            {
+               "$typename": "Attribute",
+               "name": "name",
+               "persisted": false,
+               "declaredType": "String"
+            }
+         ],
+         "methods": [],
+         "baseEntity": null
+      }
+   ],
+   "methods": []
+}
