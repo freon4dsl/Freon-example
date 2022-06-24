@@ -1,7 +1,7 @@
 # ProjectIt-example
 An example project showing how to build a projectional editor with ProjectIt.
 
-This example works with version 0.2.0 of ProjectIt.
+This example works with version 0.4.0 of ProjectIt.
 
 You should also read the documentation at https://www.projectit.org/020_Getting_Started/010_Installation.
 
@@ -27,19 +27,25 @@ In the following the root of the project will be indicated with '~'.
     ```
 
 
-*   Start the server (note that anything that is saved in the editor will be stored in `~/modelstore`):
+* Start the server (note that anything that is saved in the editor will be stored in `~/modelstore`):
 
     ```bash
     yarn model-server
     ```
 
-*	Open another (bash) terminal, and start the generated editor from it:
+* Open another (bash) terminal, and start the generated editor from it:
 
      ```bash
+     yarn prepare-app   # Needed generate the runtime css files.
      yarn dev
      ```
+     
+* Open the app in the browser on `localhost:5000`
 
-> The last command opens your preferred browser with the generated editor for the language
->    `Entity` on `<a href="http://localhost:3000/" target="_blank">http://localhost:3000/</a>`.
->    If Chrome is not your preferred browser, please open the above page in Chrome, because we
->    cannot ensure that the editor functions as it should in other browsers.
+The last command opens your preferred browser with the generated editor for the language
+on [localhost:5000](http://localhost:5000/).
+
+Under the `View` menu you can deselect the `myTables` option to get a view as text without tables.
+
+Styling is done though a collection of css variables in `style/_freon_theme-light.scss`.
+If you change the theme, run `yarn prepare-app` to uopdate the running app with the new style.

@@ -1,7 +1,9 @@
-typer ExampleTyper for language Entity
+typer
 
 // for now: first is considered to be the root of the type hierarchy
 istype {  BaseType }
+
+hastype { ExExpression, Parameter, Attribute, Method, AttributeRef, ParameterRef }
 
 anytype {
     conformsto AttributeType:ANY;
@@ -27,9 +29,7 @@ Attribute {
 Method {
     infertype self.declaredType;
 }
-ExExpression {
-    abstract infertype  ;
-}
+
 StringLiteralExpression {
     infertype AttributeType:String;
 }
@@ -75,6 +75,16 @@ AttributeRef   {
 SumExpression {
     infertype AttributeType:Integer;
 }
-/*
-
-*/
+LoopVariableRef {
+    // TODO this rule should be different
+    infertype AttributeType:Integer;
+}
+LessThenExpression {
+    infertype AttributeType:Boolean;
+}
+GreaterThenExpression {
+    infertype AttributeType:Boolean;
+}
+EqualsExpression {
+    infertype AttributeType:Boolean;
+}

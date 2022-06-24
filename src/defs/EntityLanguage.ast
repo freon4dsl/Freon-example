@@ -2,28 +2,29 @@ language Entity
 
 model EntityModel {
     name: identifier;
-    models: EntityModelUnit[];
+    units: EntityModelUnit[];
 }
 
 modelunit EntityModelUnit {
-    public name: identifier;
-    public entities: Entity[];
-    public methods: Method[];
+    name: identifier;
+    entities: Entity[];
+    methods: Method[];
+    file-extension = "exm";
 }
 interface BaseType {
-    public name: identifier;
+    name: identifier;
 }
 interface Type base BaseType {
 }
 
-public concept Entity implements Type {
+concept Entity implements Type {
     attributes: Attribute[];
     methods: Method[];
     reference baseEntity?: Entity;
 }
 
-public concept Method {
-    public name: identifier;
+concept Method {
+    name: identifier;
     reference declaredType : Type;
     body: ExExpression;
     parameters: Parameter[];
@@ -64,11 +65,11 @@ expression StringLiteralExpression base LiteralExpression {
 }
 
 expression NumberLiteralExpression base LiteralExpression   {
-    value: number; // TODO should be changed to type number
+    value: number;
 }
 
 expression BooleanLiteralExpression base LiteralExpression {
-    value: boolean; // TODO should be changed to type boolean
+    value: boolean;
 }
 
 expression AbsExpression base ExExpression {
