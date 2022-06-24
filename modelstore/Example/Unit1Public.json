@@ -24,8 +24,14 @@
                "$typename": "Method",
                "name": "givePresent",
                "body": null,
-               "parameters": [],
-               "declaredType": null
+               "parameters": [
+                  {
+                     "$typename": "Parameter",
+                     "name": "present",
+                     "declaredType": "Thing"
+                  }
+               ],
+               "declaredType": "Thing"
             }
          ],
          "baseEntity": null

@@ -46,7 +46,7 @@
 
 	let menu: MenuComponentDev;
 
-	// stuff for posiitoning the menu
+	// stuff for positoning the menu
 	let anchor: HTMLDivElement;
 	let anchorClasses: { [k: string]: boolean } = {}; // a list of name - boolean pairs
 
@@ -101,7 +101,7 @@
 	];
 
 	function isDisabled(id): boolean {
-		if (id >= 1 && id <= 5 || id === 8) {
+		if (id >= 1 && id <= 5 || id===7 || id === 8) {
 			return true;
 		}
 		return false;
