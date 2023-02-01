@@ -1,7 +1,7 @@
 # ProjectIt-example
 An example project showing how to build a projectional editor with ProjectIt.
 
-This example works with version 0.4.0 of ProjectIt.
+This example works with version 0.5.0 of ProjectIt.
 
 You should also read the documentation at https://www.projectit.org/020_Getting_Started/010_Installation.
 
@@ -47,5 +47,5 @@ on [localhost:5000](http://localhost:5000/).
 
 Under the `View` menu you can deselect the `myTables` option to get a view as text without tables.
 
-Styling is done though a collection of css variables in `style/_freon_theme-light.scss`.
+Styling is done though a collection of css variables in `src/webapp/style/_freon_theme-light.scss`.
 If you change the theme, run `yarn prepare-app` to uopdate the running app with the new style.

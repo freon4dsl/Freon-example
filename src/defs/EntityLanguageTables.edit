@@ -1,4 +1,4 @@
-editor myTables
+editor myTables precedence 1
 
 // Entity project defined the 'attributes' to be shown as a table
 Entity {
