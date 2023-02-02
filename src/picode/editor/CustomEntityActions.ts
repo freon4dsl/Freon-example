@@ -23,7 +23,7 @@ import { NumberLiteralExpression } from "../language/gen/NumberLiteralExpression
  * (2) if a creator/behavior based on the editor definition is present, this is used,
  * (3) if neither (1) nor (2) yields a result, the default is used.
  */
-export class CustomExampleActions implements FreCombinedActions {
+export class CustomEntityActions implements FreCombinedActions {
     binaryExpressionActions: FreCreateBinaryExpressionAction[] = MANUAL_BINARY_EXPRESSION_ACTIONS;
     customActions: FreCustomAction[] = MANUAL_CUSTOM_ACTIONS;
 }
