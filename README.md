@@ -1,12 +1,12 @@
-# ProjectIt-example
-An example project showing how to build a projectional editor with ProjectIt.
+# Freon-example
+An example project showing how to build a projectional editor with Freon.
 
-This example works with version 0.5.0 of ProjectIt.
+This example works with version 0.5.0 of Freon.
 
-You should also read the documentation at https://www.projectit.org/020_Getting_Started/010_Installation.
+You should also read the documentation at https://www.freon4dsl.dev/020_Getting_Started/010_Installation.
 
 For an explanation of the content of the project see
-<a href="https://www.projectit.org//020_Getting_Started/020_Project_Structure" target="_blank">
+<a href="https://www.freon4dsl.dev/020_Getting_Started/020_Project_Structure" target="_blank">
 Project Structure</a>.
 
 ## Getting started

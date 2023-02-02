@@ -1,7 +1,7 @@
 import { EditorState } from "./EditorState";
 import { setUserMessage } from "../components/stores/UserMessageStore";
 import { editorEnvironment, serverCommunication } from "../config/WebappConfiguration";
-import type { PiModelUnit } from "@projectit/core";
+import type { PiModelUnit } from "@freon4dsl/core";
 import { editorProgressShown } from "../components/stores/ModelStore";
 
 // TODO rethink this class using Workers, see https://developer.mozilla.org/en-US/docs/Web/API/Worker

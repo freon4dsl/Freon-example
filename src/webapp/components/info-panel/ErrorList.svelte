@@ -73,7 +73,7 @@
 	import IconButton from '@smui/icon-button';
 	import LinearProgress from '@smui/linear-progress';
 	import { errorsLoaded, modelErrors } from "../stores/InfoPanelStore";
-	import type { PiError } from "@projectit/core";
+	import type { PiError } from "@freon4dsl/core";
 	import { EditorState } from "../../language/EditorState";
 
 	// sorting of table

@@ -1,7 +1,7 @@
 
 // TODO rethink these interfaces
-import type { PiElement } from "@projectit/core";
-import { PiNamedElement } from "@projectit/core";
+import type { PiElement } from "@freon4dsl/core";
+import { PiNamedElement } from "@freon4dsl/core";
 // import { setUserMessage } from "../webapp-ts-utils/UserMessageUtils";
 
 // export interface IModelUnitData {

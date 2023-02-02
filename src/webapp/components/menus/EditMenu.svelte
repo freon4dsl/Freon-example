@@ -26,7 +26,7 @@
 </div>
 
 <script lang="ts">
-	import { isRtError, PiElement } from "@projectit/core";
+	import { isRtError, PiElement } from "@freon4dsl/core";
 	import type { MenuComponentDev } from '@smui/menu';
 	import Menu from '@smui/menu';
 	import { Anchor } from '@smui/menu-surface';

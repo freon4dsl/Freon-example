@@ -1,6 +1,6 @@
-import { PiLogger } from "@projectit/core";
-import type { PiNamedElement } from "@projectit/core";
-import { GenericModelSerializer } from "@projectit/core";
+import { PiLogger } from "@freon4dsl/core";
+import type { PiNamedElement } from "@freon4dsl/core";
+import { GenericModelSerializer } from "@freon4dsl/core";
 import type { IServerCommunication } from "./IServerCommunication";
 import { setUserMessage } from "../components/stores/UserMessageStore";
 

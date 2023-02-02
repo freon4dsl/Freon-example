@@ -6,7 +6,7 @@ import {
     unitTypes
 } from "../components/stores/LanguageStore";
 import { editorEnvironment } from "../config/WebappConfiguration";
-import { FreProjectionHandler, Language, PiUndoManager } from "@projectit/core";
+import { FreProjectionHandler, Language, PiUndoManager } from "@freon4dsl/core";
 import { setUserMessage } from "../components/stores/UserMessageStore";
 
 export class LanguageInitializer {

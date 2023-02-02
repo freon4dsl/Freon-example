@@ -8,8 +8,8 @@ import {
     PiUndoManager,
     Searcher,
     SeverityType
-} from "@projectit/core";
-import type { PiElement } from "@projectit/core";
+} from "@freon4dsl/core";
+import type { PiElement } from "@freon4dsl/core";
 import { activeTab, errorsLoaded, errorTab, searchResultLoaded, searchResults, searchTab } from "../components/stores/InfoPanelStore";
 import { EditorState } from "./EditorState";
 import { setUserMessage } from "../components/stores/UserMessageStore";

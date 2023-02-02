@@ -1,4 +1,4 @@
-import { PiLogger } from "@projectit/core";
+import { PiLogger } from "@freon4dsl/core";
 
 // Mute or unmute logs here (in addition to elsewhere).
 export function muteLogs() {

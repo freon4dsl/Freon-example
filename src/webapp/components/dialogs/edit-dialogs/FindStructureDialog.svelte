@@ -36,7 +36,7 @@
 </Dialog>
 
 <script lang="ts">
-	import { Language } from "@projectit/core";
+	import { Language } from "@freon4dsl/core";
 	import Dialog, { Title, Content, Actions } from '@smui/dialog';
 	import Radio from '@smui/radio';
 	import Card from '@smui/card';

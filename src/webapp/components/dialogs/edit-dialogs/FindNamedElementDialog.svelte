@@ -35,7 +35,7 @@
 </Dialog>
 
 <script lang="ts">
-    import { Language } from "@projectit/core";
+    import { Language } from "@freon4dsl/core";
     import Dialog, { Title, Content, Actions } from "@smui/dialog";
     import Textfield from "@smui/textfield";
     import HelperText from "@smui/textfield/helper-text";

@@ -1,17 +1,17 @@
-// This file contains all methods to connect the webapp to the projectIt generated language editorEnvironment and to the server that stores the models
+// This file contains all methods to connect the webapp to the Freon generated language editorEnvironment and to the server that stores the models
 import {
     PiError,
     PiErrorSeverity,
     PiLogger,
     PiOwnerDescriptor,
     SeverityType
-} from "@projectit/core";
+} from "@freon4dsl/core";
 import type {
     PiElement,
     PiModel,
     PiModelUnit,
     PiNamedElement
-} from "@projectit/core";
+} from "@freon4dsl/core";
 import { get } from "svelte/store";
 import {
     currentModelName,
