@@ -1,4 +1,4 @@
-import type { PiEnvironment } from "@freon4dsl/core";
+import type { FreEnvironment } from "@freon4dsl/core";
 import { LanguageInitializer } from "../language/LanguageInitializer";
 import type { IServerCommunication } from "../server/IServerCommunication";
 import { ServerCommunication } from "../server/ServerCommunication";
@@ -7,7 +7,7 @@ import { ServerCommunication } from "../server/ServerCommunication";
  * The one and only reference to the actual language for which this editor runs
  */
 import { EntityEnvironment } from "../../picode/config/gen/EntityEnvironment";
-export const editorEnvironment: PiEnvironment = EntityEnvironment.getInstance();
+export const editorEnvironment: FreEnvironment = EntityEnvironment.getInstance();
 LanguageInitializer.initialize();
 
 /**

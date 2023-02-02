@@ -6,7 +6,7 @@ import {
     unitTypes
 } from "../components/stores/LanguageStore";
 import { editorEnvironment } from "../config/WebappConfiguration";
-import { FreProjectionHandler, FreLanguage, PiUndoManager } from "@freon4dsl/core";
+import { FreProjectionHandler, FreLanguage, FreUndoManager } from "@freon4dsl/core";
 import { setUserMessage } from "../components/stores/UserMessageStore";
 
 export class LanguageInitializer {
@@ -42,6 +42,6 @@ export class LanguageInitializer {
         editorEnvironment.editor.setUserMessage = setUserMessage;
 
         // start the undo manager
-        PiUndoManager.getInstance();
+        FreUndoManager.getInstance();
     }
 }
