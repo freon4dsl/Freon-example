@@ -10,7 +10,7 @@
     import SplitPane from "./components/SplitPane.svelte";
     import EditorPart from "./components/editor-panel/EditorPart.svelte";
     import InfoPanel from "./components/info-panel/InfoPanel.svelte";
-    import { SeverityType } from "@freon4dsl/core";
+    import { FreErrorSeverity } from "@freon4dsl/core";
     import Button from "@smui/button";
 
     // <Icon slot='icon' class="less-padding" component={Svg} viewBox='0 0 48 48'>
@@ -31,13 +31,13 @@
     // todo use freon variables here
     let severityClass: string;
     $: severityClass =
-        $severity === SeverityType.info ?
+        $severity === FreErrorSeverity.Info ?
             "blue"
-        : ($severity === SeverityType.hint ?
+        : ($severity === FreErrorSeverity.Hint ?
                 "green"
-           : ($severity === SeverityType.warning ?
+           : ($severity === FreErrorSeverity.Warning ?
                 "plum"
-             : ($severity === SeverityType.error ?
+             : ($severity === FreErrorSeverity.Error ?
                 "red"
                 : "none")));
 </script>
