@@ -12,7 +12,6 @@ import {
     FreTriggerUse, isString, ActionBox
 } from "@freon4dsl/core";
 import { RoleProvider } from "@freon4dsl/core";
-import { NumberLiteralExpression } from "../language/gen/NumberLiteralExpression";
 
 /**
  * Class CustomEntityActions provides an entry point for the language engineer to
@@ -32,51 +31,5 @@ export const MANUAL_BINARY_EXPRESSION_ACTIONS: FreCreateBinaryExpressionAction[]
 
 export const MANUAL_CUSTOM_ACTIONS: FreCustomAction[] = [
     // Add your own custom behavior here
-    FreCustomAction.create({
-
-        activeInBoxRoles: [
-            "Method-body",
-            "AbsExpression-expr",
-            "SumExpression-from",
-            "SumExpression-to",
-            "SumExpression-body",
-            "IfExpression-condition",
-            "IfExpression-whenTrue",
-            "IfExpression-whenFalse",
-            "PiBinaryExpression-left",
-            "PiBinaryExpression-right",
-            "MultiplyExpression-left",
-            "MultiplyExpression-right",
-            "PlusExpression-left",
-            "PlusExpression-right",
-            "DivideExpression-left",
-            "DivideExpression-right",
-            "AndExpression-left",
-            "AndExpression-right",
-            "OrExpression-left",
-            "OrExpression-right",
-            "ComparisonExpression-left",
-            "ComparisonExpression-right",
-            "LessThenExpression-left",
-            "LessThenExpression-right",
-            "GreaterThenExpression-left",
-            "GreaterThenExpression-right",
-            "EqualsExpression-left",
-            "EqualsExpression-right"
-        ],
-        trigger: /[0-9]/,
-        action: (box: Box, trigger: FreTriggerUse, editor: FreEditor) => {
-            const parent = box.element;
-            const x = new NumberLiteralExpression();
-            if( isString(trigger) ) {
-                x.value = Number.parseInt(trigger.toString());
-            }
-            parent[(box as ActionBox).propertyName] = x;
-            return x;
-        },
-        boxRoleToSelect: RoleProvider.property("NumberLiteralExpression", "value", "numberbox"),
-        caretPosition: FreCaret.RIGHT_MOST
-    })
-
 ];
 
