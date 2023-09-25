@@ -21,7 +21,7 @@ Attribute {
 // Method specifies that 'parameters' must be shown as a table
 Method {
     [
-        method ${name} ( ${parameters table} ): ${declaredType} {
+        method ${name} ( ${parameters table rows} ): ${declaredType} {
             ${body}
         }
     ]
