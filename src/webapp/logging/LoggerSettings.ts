@@ -36,7 +36,9 @@ export function muteLogs() {
     FreLogger.mute("FreCommand");
     FreLogger.mute("BehaviorUtils");
     FreLogger.mute("Box");
-    // FreLogger.mute("ListBox");
+    FreLogger.mute("ListBox");
+    FreLogger.mute("FreProjectionHandler");
+    FreLogger.mute("OptionalComponentNew");
     FreLogger.mute("LayoutBox");
 
     // from ~/webapp:

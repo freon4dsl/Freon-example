@@ -1,55 +1,340 @@
 {
-   "$typename": "EntityModelUnit",
-   "name": "Unit1",
-   "entities": [
+   "serializationFormatVersion": "1",
+   "languages": [],
+   "nodes": [
       {
-         "$typename": "Entity",
-         "name": "Person",
-         "attributes": [
+         "id": "ID-6",
+         "classifier": {
+            "language": "-default-key-Entity",
+            "version": "1",
+            "key": "-default-key-EntityModelUnit"
+         },
+         "properties": [
             {
-               "$typename": "Attribute",
-               "name": "lenght",
-               "persisted": false,
-               "declaredType": "Integer"
+               "property": {
+                  "language": "-default-key-Entity",
+                  "version": "1",
+                  "key": "-default-key-EntityModelUnit-name"
+               },
+               "value": "Unit1"
+            }
+         ],
+         "children": [
+            {
+               "containment": {
+                  "language": "-default-key-Entity",
+                  "version": "1",
+                  "key": "-default-key-EntityModelUnit-entities"
+               },
+               "children": [
+                  "ID-7",
+                  "ID-12"
+               ]
             },
             {
-               "$typename": "Attribute",
-               "name": "name",
-               "persisted": false,
-               "declaredType": "String"
+               "containment": {
+                  "language": "-default-key-Entity",
+                  "version": "1",
+                  "key": "-default-key-EntityModelUnit-methods"
+               },
+               "children": []
             }
          ],
-         "methods": [
-            {
-               "$typename": "Method",
-               "name": "givePresent",
-               "body": null,
-               "parameters": [
-                  {
-                     "$typename": "Parameter",
-                     "name": "present",
-                     "declaredType": "Thing"
-                  }
-               ],
-               "declaredType": "Thing"
-            }
-         ],
-         "baseEntity": null
+         "references": [],
+         "parent": "ID-5"
       },
       {
-         "$typename": "Entity",
-         "name": "Thing",
-         "attributes": [
+         "id": "ID-7",
+         "classifier": {
+            "language": "-default-key-Entity",
+            "version": "1",
+            "key": "-default-key-Entity"
+         },
+         "properties": [
             {
-               "$typename": "Attribute",
-               "name": "name",
-               "persisted": false,
-               "declaredType": "String"
+               "property": {
+                  "language": "-default-key-Entity",
+                  "version": "1",
+                  "key": "-default-key-BaseType-name"
+               },
+               "value": "Person"
             }
          ],
-         "methods": [],
-         "baseEntity": null
+         "children": [
+            {
+               "containment": {
+                  "language": "-default-key-Entity",
+                  "version": "1",
+                  "key": "-default-key-Entity-attributes"
+               },
+               "children": [
+                  "ID-8",
+                  "ID-9"
+               ]
+            },
+            {
+               "containment": {
+                  "language": "-default-key-Entity",
+                  "version": "1",
+                  "key": "-default-key-Entity-methods"
+               },
+               "children": [
+                  "ID-10"
+               ]
+            }
+         ],
+         "references": [],
+         "parent": "ID-6"
+      },
+      {
+         "id": "ID-8",
+         "classifier": {
+            "language": "-default-key-Entity",
+            "version": "1",
+            "key": "-default-key-Attribute"
+         },
+         "properties": [
+            {
+               "property": {
+                  "language": "-default-key-Entity",
+                  "version": "1",
+                  "key": "-default-key-Attribute-name"
+               },
+               "value": "lenght"
+            },
+            {
+               "property": {
+                  "language": "-default-key-Entity",
+                  "version": "1",
+                  "key": "-default-key-Attribute-persisted"
+               },
+               "value": "false"
+            }
+         ],
+         "children": [],
+         "references": [
+            {
+               "reference": {
+                  "language": "-default-key-Entity",
+                  "version": "1",
+                  "key": "-default-key-Attribute-declaredType"
+               },
+               "targets": [
+                  {
+                     "resolveInfo": "Integer",
+                     "reference": "ID-2"
+                  }
+               ]
+            }
+         ],
+         "parent": "ID-7"
+      },
+      {
+         "id": "ID-9",
+         "classifier": {
+            "language": "-default-key-Entity",
+            "version": "1",
+            "key": "-default-key-Attribute"
+         },
+         "properties": [
+            {
+               "property": {
+                  "language": "-default-key-Entity",
+                  "version": "1",
+                  "key": "-default-key-Attribute-name"
+               },
+               "value": "name"
+            },
+            {
+               "property": {
+                  "language": "-default-key-Entity",
+                  "version": "1",
+                  "key": "-default-key-Attribute-persisted"
+               },
+               "value": "false"
+            }
+         ],
+         "children": [],
+         "references": [
+            {
+               "reference": {
+                  "language": "-default-key-Entity",
+                  "version": "1",
+                  "key": "-default-key-Attribute-declaredType"
+               },
+               "targets": [
+                  {
+                     "resolveInfo": "String",
+                     "reference": "ID-1"
+                  }
+               ]
+            }
+         ],
+         "parent": "ID-7"
+      },
+      {
+         "id": "ID-10",
+         "classifier": {
+            "language": "-default-key-Entity",
+            "version": "1",
+            "key": "-default-key-Method"
+         },
+         "properties": [
+            {
+               "property": {
+                  "language": "-default-key-Entity",
+                  "version": "1",
+                  "key": "-default-key-Method-name"
+               },
+               "value": "givePresent"
+            }
+         ],
+         "children": [
+            {
+               "containment": {
+                  "language": "-default-key-Entity",
+                  "version": "1",
+                  "key": "-default-key-Method-parameters"
+               },
+               "children": [
+                  "ID-11"
+               ]
+            }
+         ],
+         "references": [
+            {
+               "reference": {
+                  "language": "-default-key-Entity",
+                  "version": "1",
+                  "key": "-default-key-Method-declaredType"
+               },
+               "targets": [
+                  {
+                     "resolveInfo": "Thing",
+                     "reference": "ID-12"
+                  }
+               ]
+            }
+         ],
+         "parent": "ID-7"
+      },
+      {
+         "id": "ID-11",
+         "classifier": {
+            "language": "-default-key-Entity",
+            "version": "1",
+            "key": "-default-key-Parameter"
+         },
+         "properties": [
+            {
+               "property": {
+                  "language": "-default-key-Entity",
+                  "version": "1",
+                  "key": "-default-key-Parameter-name"
+               },
+               "value": "present"
+            }
+         ],
+         "children": [],
+         "references": [
+            {
+               "reference": {
+                  "language": "-default-key-Entity",
+                  "version": "1",
+                  "key": "-default-key-Parameter-declaredType"
+               },
+               "targets": [
+                  {
+                     "resolveInfo": "Thing",
+                     "reference": "ID-12"
+                  }
+               ]
+            }
+         ],
+         "parent": "ID-10"
+      },
+      {
+         "id": "ID-12",
+         "classifier": {
+            "language": "-default-key-Entity",
+            "version": "1",
+            "key": "-default-key-Entity"
+         },
+         "properties": [
+            {
+               "property": {
+                  "language": "-default-key-Entity",
+                  "version": "1",
+                  "key": "-default-key-BaseType-name"
+               },
+               "value": "Thing"
+            }
+         ],
+         "children": [
+            {
+               "containment": {
+                  "language": "-default-key-Entity",
+                  "version": "1",
+                  "key": "-default-key-Entity-attributes"
+               },
+               "children": [
+                  "ID-13"
+               ]
+            },
+            {
+               "containment": {
+                  "language": "-default-key-Entity",
+                  "version": "1",
+                  "key": "-default-key-Entity-methods"
+               },
+               "children": []
+            }
+         ],
+         "references": [],
+         "parent": "ID-6"
+      },
+      {
+         "id": "ID-13",
+         "classifier": {
+            "language": "-default-key-Entity",
+            "version": "1",
+            "key": "-default-key-Attribute"
+         },
+         "properties": [
+            {
+               "property": {
+                  "language": "-default-key-Entity",
+                  "version": "1",
+                  "key": "-default-key-Attribute-name"
+               },
+               "value": "name"
+            },
+            {
+               "property": {
+                  "language": "-default-key-Entity",
+                  "version": "1",
+                  "key": "-default-key-Attribute-persisted"
+               },
+               "value": "false"
+            }
+         ],
+         "children": [],
+         "references": [
+            {
+               "reference": {
+                  "language": "-default-key-Entity",
+                  "version": "1",
+                  "key": "-default-key-Attribute-declaredType"
+               },
+               "targets": [
+                  {
+                     "resolveInfo": "String",
+                     "reference": "ID-1"
+                  }
+               ]
+            }
+         ],
+         "parent": "ID-12"
       }
-   ],
-   "methods": []
+   ]
 }
