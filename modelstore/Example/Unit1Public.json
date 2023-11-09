@@ -19,7 +19,7 @@
                "value": "Unit1"
             }
          ],
-         "children": [
+         "containments": [
             {
                "containment": {
                   "language": "-default-key-Entity",
@@ -60,7 +60,7 @@
                "value": "Person"
             }
          ],
-         "children": [
+         "containments": [
             {
                "containment": {
                   "language": "-default-key-Entity",
@@ -111,7 +111,7 @@
                "value": "false"
             }
          ],
-         "children": [],
+         "containments": [],
          "references": [
             {
                "reference": {
@@ -154,7 +154,7 @@
                "value": "false"
             }
          ],
-         "children": [],
+         "containments": [],
          "references": [
             {
                "reference": {
@@ -189,7 +189,7 @@
                "value": "givePresent"
             }
          ],
-         "children": [
+         "containments": [
             {
                "containment": {
                   "language": "-default-key-Entity",
@@ -235,7 +235,7 @@
                "value": "present"
             }
          ],
-         "children": [],
+         "containments": [],
          "references": [
             {
                "reference": {
@@ -270,7 +270,7 @@
                "value": "Thing"
             }
          ],
-         "children": [
+         "containments": [
             {
                "containment": {
                   "language": "-default-key-Entity",
@@ -318,7 +318,7 @@
                "value": "false"
             }
          ],
-         "children": [],
+         "containments": [],
          "references": [
             {
                "reference": {
