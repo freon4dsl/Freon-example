@@ -1,7 +1,7 @@
 {
   "private": false,
   "name": "@freon4dsl/example",
-  "version": "0.7.0-beta",
+  "version": "0.7.0-beta1",
   "license": "MIT",
   "type": "module",
   "scripts": {
