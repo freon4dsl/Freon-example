@@ -30,7 +30,7 @@ In the following the root of the project will be indicated with '~'.
 * Start the server (note that anything that is saved in the editor will be stored in `~/modelstore`):
 
     ```bash
-    yarn model-server
+    model-server
     ```
 
 * Open another (bash) terminal, and start the generated editor from it:

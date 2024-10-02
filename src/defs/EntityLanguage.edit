@@ -1,6 +1,6 @@
 editor default
 
-boolean [RIGHT | WRONG] // are the strings used to display a boolean value
+//boolean [RIGHT | WRONG] // are the strings used to display a boolean value
 
 Attribute {
     [ ${self.name} : ${self.declaredType} ]
