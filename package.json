@@ -1,7 +1,7 @@
 {
   "private": false,
   "name": "@freon4dsl/example",
-  "version": "0.7.0-beta1",
+  "version": "0.7.0-beta2",
   "license": "MIT",
   "type": "module",
   "scripts": {
@@ -16,8 +16,7 @@
     "install-local": "npm install --registry http://localhost:4873",
     "prepare-app": "npm run styles-light && npm run styles-dark",
     "styles-light": "smui-theme compile public/site.css -i style",
-    "styles-dark": "smui-theme compile public/site-dark.css -i style/dark",
-    "install-local": "yarn install --registry http://localhost:4873"
+    "styles-dark": "smui-theme compile public/site-dark.css -i style/dark"
   },
   "devDependencies": {
     "cross-env": "^7.0.3",
@@ -50,33 +49,6 @@
     "mobx-utils": "^6.0.8",
     "net.akehurst.language-agl-processor": "4.0.0-rc.5",
     "sirv-cli": "^2.0.2",
-    "tslib": "^2.6.2",
-    "tsc-alias": "^1.8.10",
-    "@material/theme": "^14.0.0",
-    "@material/typography": "^14.0.0",
-    "@mdi/js": "^7.4.47",
-    "@smui-extra/autocomplete": "^7.0.0",
-    "@smui/banner": "^7.0.0",
-    "@smui/button": "^7.0.0",
-    "@smui/card": "^7.0.0",
-    "@smui/checkbox": "^7.0.0",
-    "@smui/common": "^7.0.0",
-    "@smui/data-table": "^7.0.0",
-    "@smui/dialog": "^7.0.0",
-    "@smui/drawer": "^7.0.0",
-    "@smui/form-field": "^7.0.0",
-    "@smui/icon-button": "^7.0.0",
-    "@smui/layout-grid": "^7.0.0",
-    "@smui/linear-progress": "^7.0.0",
-    "@smui/list": "^7.0.0",
-    "@smui/menu": "^7.0.0",
-    "@smui/menu-surface": "^7.0.0",
-    "@smui/paper": "^7.0.0",
-    "@smui/radio": "^7.0.0",
-    "@smui/tab": "^7.0.0",
-    "@smui/tab-bar": "^7.0.0",
-    "@smui/textfield": "^7.0.0",
-    "@smui/tooltip": "^7.0.0",
-    "@smui/top-app-bar": "^7.0.0"
+    "tslib": "^2.6.2"
   }
 }
