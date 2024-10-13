@@ -18,34 +18,39 @@ In the following the root of the project will be indicated with '~'.
 *   Next, install all necessary packages by running:
 
     ```bash
-    yarn install
+    npm install
     ```
 
 *   Run the generator and see the generated files appearing in the folder ~/src/picode:
     ```bash
-    yarn generate
+    npm run generate
     ```
 
 
 * Start the server (note that anything that is saved in the editor will be stored in `~/modelstore`):
 
     ```bash
-    model-server
+    npm run server
     ```
 
 * Open another (bash) terminal, and start the generated editor from it:
 
      ```bash
-     yarn prepare-app   # Needed generate the runtime css files.
-     yarn dev
+     npm run prepare-app   # Needed generate the runtime css files.
+     npm run dev
      ```
      
-* Open the app in the browser on `localhost:5000`
+* Open the app in the browser on `localhost:8080`, or the one shown in the terminal
 
 The last command opens your preferred browser with the generated editor for the language
-on [localhost:5000](http://localhost:5000/).
+on [localhost:8080](http://localhost:8080/).
 
 Under the `View` menu you can deselect the `myTables` option to get a view as text without tables.
 
-Styling is done though a collection of css variables in `src/webapp/style/_freon_theme-light.scss`.
-If you change the theme, run `yarn prepare-app` to uopdate the running app with the new style.
+Styling of the outer app is done though a collection of css variables in `src/webapp/style/_freon_theme-light.scss`.
+
+Styling of the editor components is done
+_TODO need to add this before the release_.
+For now you need to look at the webapp-starter package in freon4dsl development branch as an example.
+
+If you change the theme, run `npm run prepare-app` to uopdate the running app with the new style.
