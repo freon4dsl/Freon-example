@@ -1,4 +1,9 @@
 # Freon-example
+
+> &#9432; **NOTE** This template is out of date, and only works for the old Freon 0.0.6.</br>
+> For Freon 1.0.0 use `npm create freon@latest` to create a project`.
+
+
 An example project showing how to build a projectional editor with Freon.
 
 This example works with version 0.5.0 of Freon.
